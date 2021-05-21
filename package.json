@@ -1,0 +1,32 @@
+{
+  "name": "waddle",
+  "version": "0.0.1",
+  "author": "Kim Brun Jørgensen",
+  "license": "MIT",
+  "description": "",
+  "keywords": [
+    "waddle"
+  ],
+  "homepage": "https://github.com/kimjoergensen/waddle#readme",
+  "bugs": {
+    "url": "https://github.com/kimjoergensen/waddle/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kimjoergensen/waddle.git"
+  },
+  "scripts": {
+    "start": "parcel serve public/index.html"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^15.6.0",
+    "@types/react": "^17.0.6",
+    "@types/react-dom": "^17.0.5",
+    "parcel": "^2.0.0-beta.3.1",
+    "typescript": "^4.2.4"
+  }
+}
