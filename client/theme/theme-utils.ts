@@ -10,8 +10,8 @@ namespace ThemeUtils {
    * @param style CSS line-style attribute.
    * @returns {string} formatted CSS border property.
    */
-  export function border(theme: ThemeConfig.ColorScheme, width: number, style: LineStyle): string {
-    return `${width}px ${style} ${theme.background}`
+  export function border(colorScheme: ThemeConfig.ColorScheme, width: number, style: LineStyle): string {
+    return `${width}px ${style} ${colorScheme.background}`
   }
 }
 

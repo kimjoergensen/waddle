@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import styles from './app.module.scss'
+import { Footer } from './components/footer/Footer'
 import { Main } from './components/main/Main'
 import { Navigation } from './components/navigation/Navigation'
 import { useTheme } from './hooks/UseTheme'
@@ -30,6 +31,10 @@ export const App: React.FunctionComponent = props => {
         <Main>
 
         </Main>
+
+        <Footer>
+
+        </Footer>
       </div>
     </ThemeContext.Provider>
   )
