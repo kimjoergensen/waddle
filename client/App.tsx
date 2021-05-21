@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import styles from './app.module.scss'
+import { Main } from './components/main/Main'
 import { Navigation } from './components/navigation/Navigation'
 import { useTheme } from './hooks/UseTheme'
 import ThemeConfig from './theme/theme-config'
@@ -25,6 +26,10 @@ export const App: React.FunctionComponent = props => {
         <Navigation>
 
         </Navigation>
+
+        <Main>
+
+        </Main>
       </div>
     </ThemeContext.Provider>
   )
