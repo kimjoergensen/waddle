@@ -1,6 +1,9 @@
 import ThemeConfig from '/client/theme/theme-config'
-import React from 'react'
+import React, { useContext } from 'react'
 
-export const useTheme = (variant: ThemeConfig.Variant): ThemeConfig.Theme => {
+import { ThemeContext } from '../theme/theme-provider'
+
+export const useTheme = (): ThemeConfig.Theme => {
+  const variant = useContext(ThemeContext)
   return React.useMemo(() => ThemeConfig.getTheme(variant), [variant])
 }

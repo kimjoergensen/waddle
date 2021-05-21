@@ -9,7 +9,7 @@ namespace ThemeConfig {
 
   type Color = string
 
-  interface ColorScheme {
+  export interface ColorScheme {
     background: Color
     color: Color
   }
