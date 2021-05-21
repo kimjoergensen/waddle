@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "build",
     "module": "CommonJS",
     "target": "ESNext",
     "lib": ["ESNext", "DOM"],
@@ -10,14 +9,14 @@
     "alwaysStrict": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "rootDir": "client",
-    "baseUrl": "./",
-    "isolatedModules": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "baseUrl": "./",
+    "paths": {
+      "/client/*": ["client/*"]
+    }
   },
-  "exclude": ["node_modules", "build"],
-  "include": ["client"]
+  "exclude": ["node_modules", "dist"]
 }
