@@ -11,6 +11,7 @@ namespace ThemeConfig {
 
   export interface ColorScheme {
     background: Color
+    border: Color
     color: Color
   }
 
@@ -32,10 +33,10 @@ namespace ThemeConfig {
 
   export function getTheme(variant: Variant): Theme {
     switch (variant) {
-      case Variant.light:
-        return themes.light
       case Variant.dark:
         return themes.dark
+      case Variant.light:
+        return themes.light
       default:
         return themes.light
     }
