@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import Router from 'react-router-dom'
 
 import styles from './app.module.scss'
+import { AppRoutes } from './app.routes'
 import { Footer } from './components/footer/Footer'
 import { Logo } from './components/logo/Logo'
 import { Main } from './components/main/Main'
@@ -35,11 +36,11 @@ export const App: React.FunctionComponent = props => {
 
           <Main>
             <Router.Switch>
-              <Router.Route path="/home">
+              <Router.Route path={AppRoutes.Home}>
                 {/* TODO: Home */}
                 <h3>Home</h3>
               </Router.Route>
-              <Router.Route path="/product">
+              <Router.Route path={AppRoutes.Product}>
                 {/* TODO: Product */}
                 <h3>Product</h3>
               </Router.Route>
@@ -55,11 +56,11 @@ export const App: React.FunctionComponent = props => {
           </Main>
 
           <Footer>
-            <Router.Link to="/home">
+            <Router.Link to={AppRoutes.Home}>
               {/* TODO: MenuItem to /home */}
               <button>home</button>
             </Router.Link>
-            <Router.Link to="/product">
+            <Router.Link to={AppRoutes.Product}>
               {/* TODO: MenuItem to /product */}
               <button>product</button>
             </Router.Link>
