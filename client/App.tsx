@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Router from 'react-router-dom'
 
 import styles from './app.module.scss'
 import { Footer } from './components/footer/Footer'
@@ -23,22 +24,49 @@ export const App: React.FunctionComponent = props => {
   }
 
   return (
-    <ThemeContext.Provider value={variant}>
-      <div className={styles.container} style={{ background: theme.background, color: theme.color }}>
-        <Navigation>
-          <Logo />
-          <Menu />
-        </Navigation>
+    <Router.BrowserRouter>
+      <ThemeContext.Provider value={variant}>
+        <div className={styles.container} style={{ background: theme.background, color: theme.color }}>
+          <Navigation>
+            <Logo />
+            {/* TODO: ThemeToggle */}
+            <Menu />
+          </Navigation>
 
-        <Main>
-          <h3>Hello, world!</h3>
-        </Main>
+          <Main>
+            <Router.Switch>
+              <Router.Route path="/home">
+                {/* TODO: Home */}
+                <h3>Home</h3>
+              </Router.Route>
+              <Router.Route path="/product">
+                {/* TODO: Product */}
+                <h3>Product</h3>
+              </Router.Route>
+              <Router.Route exact path="/">
+                {/* TODO: LandingPage */}
+                <h3>Landing Page</h3>
+              </Router.Route>
+              <Router.Route path="*">
+                {/* TODO: NoMatch */}
+                <h3>404: Page not found</h3>
+              </Router.Route>
+            </Router.Switch>
+          </Main>
 
-        <Footer>
-          <button onClick={() => toggleTheme()}>Toggle</button>
-        </Footer>
-      </div>
-    </ThemeContext.Provider>
+          <Footer>
+            <Router.Link to="/home">
+              {/* TODO: MenuItem to /home */}
+              <button>home</button>
+            </Router.Link>
+            <Router.Link to="/product">
+              {/* TODO: MenuItem to /product */}
+              <button>product</button>
+            </Router.Link>
+          </Footer>
+        </div>
+      </ThemeContext.Provider>
+    </Router.BrowserRouter>
   )
 }
 
