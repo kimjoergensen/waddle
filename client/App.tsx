@@ -5,13 +5,12 @@ import styles from './app.module.scss'
 import { Footer } from './components/footer/Footer'
 import { Main } from './components/main/Main'
 import { Navigation } from './components/navigation/Navigation'
-import { useTheme } from './hooks/UseTheme'
 import ThemeConfig from './theme/theme-config'
 import { ThemeContext } from './theme/theme-context'
 
 export const App: React.FunctionComponent = props => {
   const [variant, setVariant] = React.useState(ThemeConfig.Variant.dark)
-  var theme = useTheme(variant)
+  const theme = ThemeConfig.getTheme(variant)
 
   const toggleTheme = () => {
     setVariant(state =>
@@ -29,7 +28,7 @@ export const App: React.FunctionComponent = props => {
         </Navigation>
 
         <Main>
-
+          <h3>Hello, world!</h3>
         </Main>
 
         <Footer>

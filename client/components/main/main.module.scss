@@ -1,6 +1,12 @@
 .main {
   flex: 1;
+  display: flex;
   overflow-x: hidden;
   overflow-y: auto;
-  padding: 1rem 8%;
+
+  .content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.5rem 8%;
+  }
 }

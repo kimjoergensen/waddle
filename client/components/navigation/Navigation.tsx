@@ -5,11 +5,11 @@ import React from 'react'
 import styles from './navigation.module.scss'
 
 export const Navigation: React.FunctionComponent = props => {
-  const theme = useTheme()
+  const { theme } = useTheme()
 
   return (
-    <header className={styles.nav} style={{ borderBottom: ThemeUtils.border(theme.primary, 1, 'solid') }}>
-      <div className={styles.navContent}>
+    <header className={styles.nav} style={{ background: theme.primary.background, borderBottom: ThemeUtils.border(theme.primary, 1, 'solid') }}>
+      <div className={styles.content}>
         {props.children}
       </div>
     </header>
