@@ -1,0 +1,22 @@
+@mixin header($font-size: 1em) {
+  font-size: $font-size;
+  font-weight: 400;
+  font-variant: small-caps;
+  margin: 0;
+}
+
+.logo {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  h1 {
+    @include header(2rem);
+    line-height: 1.5rem;
+  }
+
+  h4 {
+    @include header(0.65rem);
+  }
+}

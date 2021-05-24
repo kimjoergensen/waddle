@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 
 import styles from './app.module.scss'
 import { Footer } from './components/footer/Footer'
+import { Logo } from './components/logo/Logo'
 import { Main } from './components/main/Main'
 import { Navigation } from './components/navigation/Navigation'
 import ThemeConfig from './theme/theme-config'
@@ -24,7 +25,7 @@ export const App: React.FunctionComponent = props => {
     <ThemeContext.Provider value={variant}>
       <div className={styles.container} style={{ background: theme.background, color: theme.color }}>
         <Navigation>
-
+          <Logo />
         </Navigation>
 
         <Main>
