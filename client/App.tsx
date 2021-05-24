@@ -5,6 +5,7 @@ import styles from './app.module.scss'
 import { Footer } from './components/footer/Footer'
 import { Logo } from './components/logo/Logo'
 import { Main } from './components/main/Main'
+import { Menu } from './components/menu/Menu'
 import { Navigation } from './components/navigation/Navigation'
 import ThemeConfig from './theme/theme-config'
 import { ThemeContext } from './theme/theme-context'
@@ -26,6 +27,7 @@ export const App: React.FunctionComponent = props => {
       <div className={styles.container} style={{ background: theme.background, color: theme.color }}>
         <Navigation>
           <Logo />
+          <Menu />
         </Navigation>
 
         <Main>
