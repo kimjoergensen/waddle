@@ -1,0 +1,19 @@
+.footerItem {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+  }
+
+  .label {
+    font-size: 11px;
+  }
+}

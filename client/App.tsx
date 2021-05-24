@@ -8,6 +8,7 @@ import { Logo } from './components/logo/Logo'
 import { Main } from './components/main/Main'
 import { Menu } from './components/menu/Menu'
 import { Navigation } from './components/navigation/Navigation'
+import { ThemeToggle } from './components/theme-toggle/ThemeToggle'
 import ThemeConfig from './theme/theme-config'
 import { ThemeContext } from './theme/theme-context'
 
@@ -29,7 +30,6 @@ export const App: React.FunctionComponent = props => {
         <div className={styles.container} style={{ background: theme.background, color: theme.color }}>
           <Navigation>
             <Logo />
-            {/* TODO: ThemeToggle */}
             <Menu />
           </Navigation>
 
@@ -63,6 +63,7 @@ export const App: React.FunctionComponent = props => {
               {/* TODO: MenuItem to /product */}
               <button>product</button>
             </Router.Link>
+            <ThemeToggle onThemeChanged={toggleTheme} />
           </Footer>
         </div>
       </ThemeContext.Provider>
