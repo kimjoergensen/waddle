@@ -16,7 +16,7 @@ namespace ThemeConfig {
   }
 
   export interface Theme {
-    /** Background color for application layout components. */
+    /** Default background color for application. */
     background: Color
     /** Default font color for application. */
     color: Color
