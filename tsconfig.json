@@ -15,8 +15,10 @@
     "strictNullChecks": false,
     "baseUrl": "./",
     "paths": {
-      "/client/*": ["client/*"]
+      "/client/*": ["client/*"],
+      "/public/*": ["public/*"]
     }
   },
+  "include": ["client", "public", "global.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

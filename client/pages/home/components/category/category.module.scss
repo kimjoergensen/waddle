@@ -1,0 +1,14 @@
+$margin: 6px;
+
+.category {
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: auto;
+  margin: $margin;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}

@@ -10,6 +10,7 @@ import { Main } from './components/main/Main'
 import { Menu } from './components/menu/Menu'
 import { Navigation } from './components/navigation/Navigation'
 import { ThemeToggle } from './components/theme-toggle/ThemeToggle'
+import { Home } from './pages/home/Home'
 import ThemeConfig from './theme/theme-config'
 import { ThemeContext } from './theme/theme-context'
 
@@ -37,8 +38,7 @@ export const App: React.FunctionComponent = props => {
           <Main>
             <Router.Switch>
               <Router.Route path={AppRoutes.Home}>
-                {/* TODO: Home */}
-                <h3>Home</h3>
+                <Home />
               </Router.Route>
               <Router.Route path={AppRoutes.Product}>
                 {/* TODO: Product */}
