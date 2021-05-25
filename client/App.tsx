@@ -48,7 +48,7 @@ export const App: React.FunctionComponent = props => {
             <Router.Link to={AppRoutes.Home}>
               <FooterItem icon={<Home />} label="Home" />
             </Router.Link>
-            <Router.Link to={ProductRoutes.New}>
+            <Router.Link to={`${AppRoutes.Product}${ProductRoutes.New}`}>
               <FooterItem icon={<Add />} label="New" />
             </Router.Link>
             <ThemeToggle onThemeChanged={toggleTheme} />
