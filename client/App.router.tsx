@@ -1,6 +1,7 @@
 import React from 'react'
 import Router from 'react-router-dom'
 
+import { LandingPage } from './components/landing-page/LandingPage'
 import { HomeRouter } from './pages/home/Home.router'
 import { ProductRouter } from './pages/product/Product.router'
 
@@ -19,8 +20,7 @@ export const AppRouter: React.FunctionComponent = props => {
         <ProductRouter />
       </Router.Route>
       <Router.Route exact path="/">
-        {/* TODO: LandingPage */}
-        <h3>Landing Page</h3>
+        <LandingPage />
       </Router.Route>
       <Router.Route path="*">
         {/* TODO: NoMatch */}

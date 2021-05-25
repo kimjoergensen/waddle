@@ -9,7 +9,7 @@ export const dark: ThemeConfig.Theme = {
     color: 'rgba(255, 255, 255, 1)'
   },
   secondary: {
-    background: 'rgba(96, 96, 96, 0.2)',
+    background: 'rgba(45, 100, 130, 0.4)',
     border: 'rgba(255, 255, 255, 0.80)',
     color: 'rgba(255, 255, 255, 1)'
   }

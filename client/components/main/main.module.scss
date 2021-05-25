@@ -6,7 +6,7 @@
 
   .content {
     flex: 1;
-    overflow-y: auto;
+    display: flex;
     padding: 0.5rem 8%;
   }
 }
