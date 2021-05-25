@@ -8,7 +8,7 @@ export const Footer: React.FunctionComponent = props => {
   const { theme } = useTheme()
 
   return (
-    <footer className={styles.footer} style={{ ...footerStyles(theme.primary) }}>
+    <footer style={{ ...footerStyles(theme.primary) }}>
       <div className={styles.content}>
         {props.children}
       </div>

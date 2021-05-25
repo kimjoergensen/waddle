@@ -8,7 +8,7 @@ export const Navigation: React.FunctionComponent = props => {
   const { theme } = useTheme()
 
   return (
-    <header className={styles.nav} style={{ ...headerStyles(theme.primary) }}>
+    <header style={{ ...headerStyles(theme.primary) }}>
       <div className={styles.content}>
         {props.children}
       </div>

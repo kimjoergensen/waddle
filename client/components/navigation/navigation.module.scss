@@ -1,13 +1,8 @@
-.nav {
+.content {
+  flex: 1;
   display: flex;
-  flex-flow: row wrap;
-
-  .content {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 8%;
-    height: 76px;
-  }
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 8%;
+  height: 76px;
 }
