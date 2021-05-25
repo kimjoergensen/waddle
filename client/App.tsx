@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom'
 import Router from 'react-router-dom'
 
 import styles from './app.module.scss'
-import { AppRoutes } from './app.routes'
+import { AppRouter, AppRoutes } from './App.router'
 import { Footer } from './components/footer/Footer'
 import { Logo } from './components/logo/Logo'
 import { Main } from './components/main/Main'
 import { Menu } from './components/menu/Menu'
 import { Navigation } from './components/navigation/Navigation'
 import { ThemeToggle } from './components/theme-toggle/ThemeToggle'
-import { Home } from './pages/home/Home'
 import ThemeConfig from './theme/theme-config'
 import { ThemeContext } from './theme/theme-context'
 
@@ -36,23 +35,7 @@ export const App: React.FunctionComponent = props => {
           </Navigation>
 
           <Main>
-            <Router.Switch>
-              <Router.Route path={AppRoutes.Home}>
-                <Home />
-              </Router.Route>
-              <Router.Route path={AppRoutes.Product}>
-                {/* TODO: Product */}
-                <h3>Product</h3>
-              </Router.Route>
-              <Router.Route exact path="/">
-                {/* TODO: LandingPage */}
-                <h3>Landing Page</h3>
-              </Router.Route>
-              <Router.Route path="*">
-                {/* TODO: NoMatch */}
-                <h3>404: Page not found</h3>
-              </Router.Route>
-            </Router.Switch>
+            <AppRouter />
           </Main>
 
           <Footer>
