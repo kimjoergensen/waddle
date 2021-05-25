@@ -1,8 +1,8 @@
 import React from 'react'
 import Router from 'react-router-dom'
 
-import { LandingPage } from './components/landing-page/LandingPage'
 import { HomeRouter } from './pages/home/Home.router'
+import { LandingPage } from './pages/landing-page/LandingPage'
 import { ProductRouter } from './pages/product/Product.router'
 
 export enum AppRoutes {
