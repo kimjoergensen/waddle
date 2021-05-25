@@ -3,6 +3,7 @@ import Router from 'react-router-dom'
 
 import { HomeRouter } from './pages/home/Home.router'
 import { LandingPage } from './pages/landing-page/LandingPage'
+import { NoMatch } from './pages/no-match/NoMatch'
 import { ProductRouter } from './pages/product/Product.router'
 
 export enum AppRoutes {
@@ -23,8 +24,7 @@ export const AppRouter: React.FunctionComponent = props => {
         <LandingPage />
       </Router.Route>
       <Router.Route path="*">
-        {/* TODO: NoMatch */}
-        <h3>404: Page not found</h3>
+        <NoMatch />
       </Router.Route>
     </Router.Switch>
   )

@@ -30,7 +30,9 @@ export const App: React.FunctionComponent = props => {
       <ThemeContext.Provider value={variant}>
         <div className={styles.container} style={{ background: theme.background, color: theme.color }}>
           <Navigation>
-            <Logo />
+            <Router.Link to="/">
+              <Logo />
+            </Router.Link>
             <Menu />
           </Navigation>
 
